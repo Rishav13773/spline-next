@@ -13,7 +13,7 @@ const TwitterChat = ({ geminiResponse }: TwitterProps) => {
     let twitterPost = geminiResponse.substring(startIndex, endIndex).trim();
 
     setTweet(twitterPost);
-  }, []);
+  }, [geminiResponse]);
 
   return (
     <div className="flex flex-col gap-6">

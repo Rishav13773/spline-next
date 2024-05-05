@@ -13,7 +13,7 @@ const InstagramChat = ({ geminiResponse }: InstagramProps) => {
     let instagramPost = geminiResponse.substring(startIndex, endIndex).trim();
 
     setInstagram(instagramPost);
-  }, []);
+  }, [geminiResponse]);
 
   return (
     <div className="flex flex-col gap-6">

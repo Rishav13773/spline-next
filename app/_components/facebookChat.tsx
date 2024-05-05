@@ -13,7 +13,7 @@ const FacebookChat = ({ geminiResponse }: FacebookProps) => {
     let facebookPost = geminiResponse.substring(startIndex, endIndex).trim();
 
     setFacebook(facebookPost);
-  }, []);
+  }, [geminiResponse]);
 
   return (
     <div className="flex flex-col gap-6">

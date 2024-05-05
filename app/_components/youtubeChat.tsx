@@ -13,7 +13,7 @@ const YoutubeChat = ({ geminiResponse }: YouTubeProps) => {
     let youtubePost = geminiResponse.substring(startIndex, endIndex).trim();
 
     setYoutube(youtubePost);
-  }, []);
+  }, [geminiResponse]);
 
   return (
     <div className="flex flex-col gap-6">
